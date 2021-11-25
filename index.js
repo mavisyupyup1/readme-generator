@@ -4,16 +4,12 @@ const generateMarkdown =require('./utils/generateMarkdown')
 const questions =require('./src/questions')
 const {writeToFile} = require('fs')
 
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
 async function init() {
     prompt(questions)
         .then (generateMarkdown)
         .then((templateToSave) =>{
-            //save to fs
+            // TODO: Create a function to write README file, save to fs
             writeToFile('README.md',templateToSave)
         })
 }
