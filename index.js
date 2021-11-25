@@ -1,13 +1,22 @@
 // TODO: Include packages needed for this application
+var {prompt} =require('inquirer')
+const generateMarkdown =require('./utils/generateMarkdown')
+const questions =require('./src/questions')
+const {writeToFile} = require('fs')
 
-// TODO: Create an array of questions for user input
-const questions = [];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+    prompt(questions)
+        .then (generateMarkdown)
+        .then((templateToSave) =>{
+            //save to fs
+            writeToFile('README.md',templateToSave)
+        })
+}
 
 // Function call to initialize app
 init();
