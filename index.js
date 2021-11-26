@@ -1,16 +1,18 @@
 // TODO: Include packages needed for this application
-var {prompt} =require('inquirer')
+var inquirer =require('inquirer')
+const questions = require('./src/questions')
 const generateMarkdown =require('./utils/generateMarkdown')
-const questions =require('./src/questions')
-const {writeToFile} = require('fs')
-
+const {writeFileSync} = require('fs')
 // TODO: Create a function to initialize app
+const promptQuestions =() =>{
+    return inquirer.prompt(questions);
+    }
 async function init() {
-    prompt(questions)
+    promptQuestions()
         .then (generateMarkdown)
         .then((templateToSave) =>{
             // TODO: Create a function to write README file, save to fs
-            writeToFile('README.md',templateToSave)
+           writeFileSync('README.md',templateToSave)
         })
 }
 

@@ -13,3 +13,89 @@
 // THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
+
+
+module.exports =[
+    {
+      type:'input',
+      name: 'title',
+      message:'What is the title of your project? (Required)',
+      validate: titleInput =>{
+        if(titleInput){
+          return true;
+        }else{
+          console.log ('Please enter project title!')
+          return false;
+        }
+      }
+    },
+    {
+      type:'input',
+      name:'description',
+      message:'Enter your project description: (Required)',
+      validate: descriptionInput=>{
+        if(descriptionInput){
+          return true;
+        } else { 
+          console.log('Please enter your Description')
+          return false;
+        }
+      }
+    },
+    {
+      type:'confirm',
+      name:'confirmTable',
+      message:'would you like to enter a table of content for this README file',
+      default:true
+    },
+    {
+    type:'input',
+    name:'installation',
+    message:'Please enter installation instruction'
+    },
+    {
+        type:'input',
+        name:'usage',
+        message:'Please enter usage information'
+    },
+    {
+        type:'input',
+        name:'test',
+        message:'What are the test instructions'
+    },
+    {
+        type:'checkbox',
+        name:'license',
+        message:'Choose licenses for your application.(Check all that apply)',
+        choices:['apache-2.0','ms-pl','mit','mpl-2.0','osl-3.0']
+    },
+    {
+        type:'input',
+        name:'github',
+        message:'What is your github username?',
+        validate: githubInput=>{
+            if(githubInput){
+                return true;
+            } else {
+                console.log('You must enter your github username')
+                return false;
+            }
+        }
+    },
+    {
+        type:'input',
+        name:'email' ,
+        message:'What is your email address?',
+        validate: email =>{
+            valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+            if(valid){
+                return true;
+            } else {
+                console.log('Please enter a valid email address')
+                return false;
+            }
+        }
+        }       
+    
+
+  ]
