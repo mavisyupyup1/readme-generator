@@ -67,7 +67,23 @@ module.exports =[
         type:'checkbox',
         name:'license',
         message:'Choose licenses for your application.(Check all that apply)',
-        choices:['apache-2.0','ms-pl','mit','mpl-2.0','osl-3.0']
+        choices:['apache-2.0','gpl-3.0','mit','mpl-2.0','lgpl-3.0']
+    },
+    {
+      type:'input',
+      name:'other',
+      message:'If other, please specify:',
+      when:({license})=>{
+        console.log('when')
+        if(license ==='other'){
+          console.log("true")
+          return true;
+        } else {
+          console.log('false')
+          return false;
+
+        }
+      }
     },
     {
         type:'input',

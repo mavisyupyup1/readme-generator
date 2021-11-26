@@ -12,7 +12,8 @@ async function init() {
         .then (generateMarkdown)
         .then((templateToSave) =>{
             // TODO: Create a function to write README file, save to fs
-           writeFileSync('README.md',templateToSave)
+           writeFileSync('./dist/README.md',templateToSave)
+           
         })
 }
 
