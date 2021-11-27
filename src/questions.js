@@ -64,6 +64,11 @@ module.exports =[
         message:'What are the test instructions'
     },
     {
+      type:'input',
+      name:'credit',
+      message:'List your collaborators,any third-party assets that require attribution, or any tutorials you followed'
+    },
+    {
         type:'checkbox',
         name:'license',
         message:'Choose licenses for your application.(Check all that apply)',
@@ -75,7 +80,7 @@ module.exports =[
       message:'If other, please specify:',
       when:({license})=>{
         console.log('when')
-        if(license ==='other'){
+        if(license === 'other'){
           console.log("true")
           return true;
         } else {
