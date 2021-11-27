@@ -26,11 +26,12 @@ To use this application, go the terminal and navigate to the directory of this p
 
 ## Demo
 https://watch.screencastify.com/v/VINx5By05a7rJGkZmbNq
+![demo](assets/readme-demo.png)
 
 ## Testing
 n/a
 
-## Credit
+## Credits
 * [Inquirer package](https://www.npmjs.com/package/inquirer)
 * [starter code](https://github.com/coding-boot-camp/potential-enigma)
 
