@@ -25,7 +25,7 @@ To install the package, go to project [github](https://github.com/mavisyupyup1/r
 To use this application, go the terminal and navigate to the directory of this project, run `node index.js` in the command line and answer the questions prompted. Once all the question is answer, you will see a README file generated in './dist/README.md'
 
 ## Demo
-https://watch.screencastify.com/v/VINx5By05a7rJGkZmbNq
+https://watch.screencastify.com/v/FnzFokX0B3CP6nsRY3iQ
 ![demo](assets/readme-demo.png)
 
 ## Testing
