@@ -13,6 +13,7 @@ async function init() {
         .then((templateToSave) =>{
             // TODO: Create a function to write README file, save to fs
            writeFileSync('./dist/README.md',templateToSave)
+           console.log('README.md generated! Go to ./dist folder to check it out')
         })
 }
 

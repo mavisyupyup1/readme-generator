@@ -11,7 +11,7 @@ var textNew = val.replace('-','--');
 return`
 ![${val}](https://img.shields.io/badge/license-${textNew}-blue)
 `
-}).join()
+}).join(" ")
 }`
 }
 
@@ -60,13 +60,15 @@ const generateTable = confirm =>{
 
 function generateMarkdown(data) {
   return `
+
 # ${data.title}
 ${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
 
 ${generateTable(data.confirmTable)}
-
+## Built with
+${data.built}
 ## Installation
 ${data.installation}
 ## Usage 

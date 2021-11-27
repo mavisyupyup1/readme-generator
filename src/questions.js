@@ -54,6 +54,11 @@ module.exports =[
     message:'Please enter installation instruction'
     },
     {
+      type:'checkbox',
+      name:'built',
+      choices:['HTML','CSS','JavaScript','Bootstrap','Node.js','JQuery','other']
+    },
+    {
         type:'input',
         name:'usage',
         message:'Please enter usage information'

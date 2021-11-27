@@ -1,15 +1,14 @@
 
-# Send a joke
+
+# as
 
 
 ![apache-2.0](https://img.shields.io/badge/license-apache--2.0-blue)
-,
-![mit](https://img.shields.io/badge/license-mit-blue)
-,
-![mpl-2.0](https://img.shields.io/badge/license-mpl--2.0-blue)
+ 
+![gpl-3.0](https://img.shields.io/badge/license-gpl--3.0-blue)
 
 ## Description
-this is a app that sends greeting with adorable animals and a joke hahahah
+as
 
 
 ## Table of Contents (Optional)
@@ -20,31 +19,29 @@ this is a app that sends greeting with adorable animals and a joke hahahah
 * [License](#license)
 * [Questions](#questions)
     
-
+## Built with
+HTML,CSS,JavaScript,Bootstrap,Node.js,JQuery,other
 ## Installation
-open the website. click click and sned
+asd
 ## Usage 
-use as much as you can
+as
 ## Testing
-no testing
+d
 ## Credit
-asad and rebbeca
+a
 ## License
 
-  This application is licensed under apache-2.0, mit, mpl-2.0. See link below for more details about the license(s).
+  This application is licensed under apache-2.0, gpl-3.0. See link below for more details about the license(s).
   
 
 
   * https://choosealicense.com/licenses/apache-2.0
   
 
-  * https://choosealicense.com/licenses/mit
-  
-
-  * https://choosealicense.com/licenses/mpl-2.0
+  * https://choosealicense.com/licenses/gpl-3.0
   
 
 ## Questions?
-* Github:  <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/mavisyupyup1">mavisyupyup1</a>
-* Email: asd@asdf.com
+* Checkout my Github:  <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/asd">asd</a>
+* Email: asd@asd.com
 
